@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Ibrahim - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation" id="bgAnimation"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">MR Code</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="gradient-text">Abdullah</span></h1>
+                <h2><span id="typed"></span><span class="cursor"></span></h2>
+                <p>A passionate developer who transforms imagination into interactive reality. I merge creativity and logic to craft seamless, high-performance web experiences from front to back.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="/img/IMG_7002 (1).JPG" alt="Abdullah Ibrahim" id="heroImg" onerror="this.style.display='none'">
+                    <div class="floating-icons">
+                        <i class="floating-icon fa-brands fa-html5"></i>
+                        <i class="floating-icon fa-brands fa-css3-alt"></i>
+                        <i class="floating-icon fa-brands fa-js"></i>
+                        <i class="floating-icon fa-brands fa-react"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate developer dedicated to creating exceptional digital experiences that make a difference</p>
+        <div class="about-content">
+            <div class="about-card" data-card="1">
+                <div class="card-badge">01</div>
+                <div class="card-particles"></div>
+                <div class="card-icon-wrapper">
+                    <div class="icon-hexagon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </div>
+                <h3>Clean Code</h3>
+                <p>I write maintainable, scalable, and well-documented code following industry best practices and modern design patterns.</p>
+            </div>
+            <div class="about-card" data-card="2">
+                <div class="card-badge">02</div>
+                <div class="card-particles"></div>
+                <div class="card-icon-wrapper">
+                    <div class="icon-hexagon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                </div>
+                <h3>Fast Performance</h3>
+                <p>Optimized applications with lightning-fast load times and smooth user experiences across all devices and platforms.</p>
+            </div>
+            <div class="about-card" data-card="3">
+                <div class="card-badge">03</div>
+                <div class="card-particles"></div>
+                <div class="card-icon-wrapper">
+                    <div class="icon-hexagon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Beautiful, fluid interfaces that adapt seamlessly to any screen size, from mobile phones to large desktop displays.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid" id="skillsGrid">
+            <div class="skill-card" style="--progress: 95%">
+                <i class="skill-icon fa-brands fa-html5"></i>
+                <div class="skill-name">HTML5</div>
+                <div class="skill-level">Expert</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="skill-card" style="--progress: 90%">
+                <i class="skill-icon fa-brands fa-css3-alt"></i>
+                <div class="skill-name">CSS3</div>
+                <div class="skill-level">Expert</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="skill-card" style="--progress: 85%">
+                <i class="skill-icon fa-brands fa-js"></i>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-level">Advanced</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="skill-card" style="--progress: 80%">
+                <i class="skill-icon fa-brands fa-java"></i>
+                <div class="skill-name">Java</div>
+                <div class="skill-level">Advanced</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="skill-card" style="--progress: 75%">
+                <i class="skill-icon fa-brands fa-python"></i>
+                <div class="skill-name">Python</div>
+                <div class="skill-level">Intermediate</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="skill-card" style="--progress: 85%">
+                <i class="skill-icon fa-brands fa-git-alt"></i>
+                <div class="skill-name">Git</div>
+                <div class="skill-level">Advanced</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-desc">A full-featured e-commerce platform with user authentication, product management, and secure payment integration.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-btn"><i class="fa-brands fa-github"></i> Code</button>
+                        <button class="project-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">AI Task Manager</h3>
+                    <p class="project-desc">Smart task management app with AI-powered priority suggestions and productivity analytics.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">AI/ML</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-btn"><i class="fa-brands fa-github"></i> Code</button>
+                        <button class="project-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Video Streaming App</h3>
+                    <p class="project-desc">Netflix-like streaming platform with real-time video processing and adaptive bitrate streaming.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">WebRTC</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-btn"><i class="fa-brands fa-github"></i> Code</button>
+                        <button class="project-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d268.22187464037376!2d31.110637197160564!3d30.32244663397999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145870244b5e061b%3A0x69fd66394402f3c6!2sBarshum%20Al%20Kubra%2C%20Barshoum%20Al%20Kubra%2C%20Toukh%2C%20Al-Qalyubia%20Governorate%206431102!5e1!3m2!1sen!2seg!4v1766658003152!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 <span class="gradient-text">Abdullah Ibrahim</span>. All rights reserved. Made with ❤️</p>
+    </footer>
+    
+    <!-- Scroll To Top -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="mian.js"></script>
+</body>
+</html>
